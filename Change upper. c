@@ -1,0 +1,5 @@
+int ch;
+    char m;
+    ch=getchar();
+    m=((ch>='a')&&(ch<='z'))?putchar(ch+'A'-'a'):putchar(ch);
+    putchar(m);
