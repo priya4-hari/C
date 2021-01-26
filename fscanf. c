@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int x;
+    if(fscanf(stdin,"%d",&x))
+    {
+        printf("%d",x);
+        }
+     else
+        {
+            fprintf(stderr,"error");
+            }
+            return 0;
+            }
