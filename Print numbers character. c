@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+    char s[256],c;
+    int i,error=0;
+    while(1)
+    {
+        printf("enter atring");
+        gets(s);
+        i=0;
+          while(s[i]==' ')
+            i++;
+           if(s[i]=='+'||s[i]=='-')
+            i++;
+           while((c=s[i++])!='\0')
+            {
+                if(c>'9'||c<'0')
+                {
+                printf("%c",c);
+                error=1;
+               
+            }
+            }
+        if(!error)
+        {
+            int num;
+            sscanf(s,"%d",&num);
+            printf("%d",num);
+            
+            }
+            }
+            return 0;
+            }
