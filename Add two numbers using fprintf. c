@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int a, b;
+    fprintf(stdout,"enter num;");
+    fscanf(stdin,"%d %d",&a, &b);
+    fprintf(stdout,"%d",a+b);
+    return 0;
+    }
