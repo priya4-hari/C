@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    char s[50],t[50];
+    int i;
+    printf("enter string;");
+    gets(s);
+    i=0;
+    while(s[i]!='\0')
+    {
+        t[i]=toupper(s[i]);
+        i++;
+        }
+        t[i]='\0';
+      puts(t);
+    return 0;
+    }
