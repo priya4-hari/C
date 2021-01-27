@@ -1,0 +1,7 @@
+for(i=0;i<80;i++)
+    {
+        ch=getchar();
+        if(ch=='\n')
+            break;
+            t[i]=c;
+            }
