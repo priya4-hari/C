@@ -1,0 +1,20 @@
+#include<stdio.h>
+void tower(int,char,char,char);
+void main()
+{
+    int n;
+    printf("enter disk;");
+    scanf("%d",&n);
+    tower(n,'A','C','B');
+    }
+void tower(int n, char from, char to,char using)
+{
+    if(n==1)
+    {
+        printf("\ndisk=%d from=%c to=%c",n, from, to);
+        return;
+        }
+    tower(n-1,from,using,to);
+    printf("\ndisk=%d from=%c to=%c",n, from, to);
+    tower(n-1,using,to,from);
+    }printf("disk=%d from=%c to=%c",n, from, to);
