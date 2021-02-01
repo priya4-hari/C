@@ -1,0 +1,21 @@
+#include<stdio.h>
+int *max(int *,int *);
+int main()
+{
+    int a, b, *p;
+    printf("enter numbers;");
+    scanf("%d %d",&a,&b);
+    p=max(&a, &b);
+    printf("max=%d",*p);
+    }
+int *max(int *m, int *n)
+{
+    if(*m>*n)
+    {
+        return m;
+        }
+     else
+    {
+        return n;
+        }
+        }
