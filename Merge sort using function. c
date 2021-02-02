@@ -1,0 +1,62 @@
+#include<stdio.h>
+int mergesort(int [],int);
+int merge(int arr[],int arr1[],int n1,int arr2[],int n2);
+void main()
+{
+    int n, a[50],i;
+    printf("enter no of ele;");
+    scanf("%d",&n);
+    printf("enter ele;");
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        }
+     mergesort(a,n);
+     printf("the sorted array is;");
+     for(i=0;i<n;i++)
+     {
+        printf("%d",a[i]);
+        }
+        }
+int mergesort(int arr[],int n)
+{
+    int arr1[n],arr2[n],n1,n2,i;
+    if(n<=1)
+        return n;
+     n1=n/2;
+     n2=n-n1;
+     for(i=0;i<n1;i++)
+     {
+        arr1[i]=arr[i];
+        }
+      for(i=0;i<n2;i++)
+      {
+        arr2[i]=arr[i+n1];
+        }
+      mergesort(arr1,n1);
+      mergesort(arr2,n2);
+      merge(arr,arr1,n1,arr2,n2);
+    }
+int merge(int arr[],int arr1[],int n1,int arr2[],int n2)
+  {
+    int p1=0,p2=0,p=0;
+    while(p1<n1&&p2<n2)
+    {
+        if(arr1[p1]<arr2[p2])
+        {
+            arr[p++]=arr1[p1++];
+            }
+         else
+         {
+            arr[p++]=arr2[p2++];
+            }
+      }
+      while(p1<n1)
+      {
+        arr[p++]=arr1[p1++];
+        }
+      while(p2<n2)
+      {
+        arr[p++]=arr2[p2++];
+        }
+        }
