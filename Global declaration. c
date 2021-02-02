@@ -1,0 +1,13 @@
+#include<stdio.h>
+int i;
+void show(void);
+void main()
+{
+    i=5;
+    show();
+    printf("\n%d",i);
+    }
+void show(void)
+{
+    printf("\n%d",i);
+    }
