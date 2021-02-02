@@ -1,0 +1,48 @@
+#include<stdio.h>
+void main()
+{
+    int a[50],b[50],j,s,t,c[60],m, n, i;
+    printf("enter no of ele;");
+    scanf("%d",&m);
+    printf("enter ele;");
+    for(i=0;i<m;i++)
+    {
+        scanf("%d",&a[i]);
+        }
+    printf("enter no of ele;");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&b[i]);
+        }
+     s=m+n;
+     printf("enter ele");
+    for(i=0;i<m;i++)
+    {
+        c[i]=a[i];
+        }
+    for(j=0;j<n;j++)
+    {
+        c[i]=b[j];
+        i++;
+        }
+   printf("the sorted order is;");
+   for(i=0;i<s;i++)
+    {
+        for(j=0;j<s-i-1;j++)
+        {
+            if(c[j]<=c[j+1])
+            {
+                t=c[j];
+                c[j]=c[j+1];
+                c[j+1]=t;
+            }
+            }
+            }
+     for(i=0;i<s;i++)
+     {
+        printf("%d",c[i]);
+        }
+        }for(i=0;i<n;i++)
+     {
+        printf("%d",c[i
