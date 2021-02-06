@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int i=3;
+    printf("\n%u",&i);
+    printf("\n%x",&i);
+    printf("\n%p",&i);
+    printf("\n%d",&i);
+    printf("\n%d",i);
+    printf("\n%u",i);
+    printf("\n%x",i);
+    printf("\n%p",i);
+    }
