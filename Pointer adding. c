@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+    int a, b, c;
+    int *pa=&a;
+    int *pb=&b;
+    int *pc=&c;
+    printf("");ntf("enter values;");
+    scanf("%d %d",&a,&b);
+    *pc=*pa+*pb;
+    printf("%d",*pc);
+    }
